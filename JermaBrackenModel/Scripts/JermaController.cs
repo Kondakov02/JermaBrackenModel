@@ -37,10 +37,10 @@ namespace JermaBrackenModel.Scripts
 
         private void HideFlowermanModel()
         {
-            Renderer[] componentsInChildren = ((Component)((Component)FlowermanAI).transform.Find("FlowermanModel")).GetComponentsInChildren<Renderer>();
-            foreach (Renderer renderer in componentsInChildren)
+            Renderer[] brackenParts = ((Component)((Component)FlowermanAI).transform.Find("FlowermanModel")).GetComponentsInChildren<Renderer>();
+            foreach (Renderer partRenderer in brackenParts)
             {
-                renderer.enabled = false;
+                partRenderer.enabled = false;
             }
         }
 
