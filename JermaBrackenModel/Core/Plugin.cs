@@ -16,7 +16,7 @@ namespace JermaBrackenModel.Core
 
         private const string modVersion = "1.0.0";
 
-        private const string bundleName = "jerma";
+        private const string bundleName = "jerma.bundle";
 
         private static ModBase _instance;
 

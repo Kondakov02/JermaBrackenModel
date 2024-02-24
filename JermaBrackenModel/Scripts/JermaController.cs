@@ -11,7 +11,7 @@ namespace JermaBrackenModel.Scripts
 
         private bool IsDead { get; set; }
 
-        private const string newModelName = "JermaModel";
+        private const string newModelName = "JermaPrefab";
 
         private const string newObjectName = "Jerma";
 
@@ -47,6 +47,7 @@ namespace JermaBrackenModel.Scripts
         private void CreateJermaModel()
         {
             GameObject asset = Assets.GetAsset<GameObject>(newModelName);
+
             JermaObject = Object.Instantiate<GameObject>(asset, ((Component)this).gameObject.transform);
             ((Object)JermaObject).name = newObjectName;
         }
